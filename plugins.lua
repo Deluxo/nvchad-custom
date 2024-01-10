@@ -57,6 +57,14 @@ local plugins = {
     },
     config = true,
     lazy = false
+  },
+
+  {
+    "chrisgrieser/nvim-scissors",
+    dependencies = "nvim-telescope/telescope.nvim",
+    opts = {
+      snippetDir = "/home/lukas/.config/nvim/lua/custom/snippets"
+    } 
   }
 
   -- To make a plugin not be loaded
