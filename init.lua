@@ -13,3 +13,4 @@ vim.g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/snippets"
 
 -- lua format 
 vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/lua_snippets"
+vim.opt.relativenumber = true
