@@ -10,6 +10,7 @@ M.general = {
     ["<leader>s"] = { ":%sno/<c-r><c-w>//g<Left><Left>", "Substitute word Literally" },
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<leader>se"] = {function() require("scissors").editSnippet() end, "Snippet Edit" },
+    ["<leader>fl"] = {function() require("telescope").extensions.live_grep_args.live_grep_args() end, "Find with grep args" },
   },
   v = {
     ["<leader>ss"] = { ":s/<c-r><c-w>//g<Left><Left>", "Substitute word RegEx" },
