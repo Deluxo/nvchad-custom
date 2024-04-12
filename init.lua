@@ -37,3 +37,12 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.api.nvim_create_autocmd({"FocusLost"}, {
+  pattern = {"*"},
+  command = "silent! wa",
+})
+
+vim.wo.relativenumber = true
+
+require("neogit").setup()
