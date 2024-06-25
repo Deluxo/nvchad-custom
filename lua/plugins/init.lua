@@ -1,5 +1,17 @@
 return {
   {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {
+        -- config
+        change_to_vcs_root = true
+      }
+    end,
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  },
+
+  {
     "stevearc/conform.nvim",
     config = function()
       require "configs.conform"
@@ -71,5 +83,46 @@ return {
       })
       require("dapui").setup()
     end,
+  },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "bash",
+        "css",
+        "dockerfile",
+        "git_config",
+        "git_rebase",
+        "gitattributes",
+        "gitcommit",
+        "gitignore",
+        "graphql",
+        "html",
+        "hyprlang",
+        "jq",
+        "jsdoc",
+        "json",
+        "json5",
+        "jsonc",
+        "lua",
+        "make",
+        "markdown",
+        "nix",
+        "passwd",
+        "php",
+        "phpdoc",
+        "regex",
+        "ron",
+        "scss",
+        "sql",
+        "typescript",
+        "vim",
+        "vimdoc",
+        "vue",
+        "xml",
+        "yaml",
+      },
+    },
   },
 }

@@ -18,4 +18,4 @@ map("n", "<leader>s", ":%sno/<c-r><c-w>//g<Left><Left>", { desc = "Substitute wo
 map("v", "<leader>ss", ":s/<c-r><c-w>//g<Left><Left>", { desc = "Substitute word RegEx"})
 map("v", "<leader>s", ":sno/<c-r><c-w>//g<Left><Left>", { desc = "Substitute word Literally"})
 
-map("n", "<leader>gs", ":Neogit", { desc = "Open Neogit"})
+map("n", "<leader>gs", ":Neogit<CR>", { desc = "Open Neogit"})
