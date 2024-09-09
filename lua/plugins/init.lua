@@ -34,6 +34,18 @@ return {
   },
 
   {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function ()
+      require("telescope").setup({
+        defaults = {
+          winblend = 70
+        }
+      })
+    end,
+  },
+
+  {
     "NeogitOrg/neogit",
     dependencies = {
       "nvim-lua/plenary.nvim",
